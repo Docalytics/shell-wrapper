@@ -14,25 +14,25 @@ class ArgumentException(Exception):
 
 
 class DummyLogger(object):
-    def debug(self, **vargs):
+    def debug(self, *args, **kwargs):
         pass
 
-    def info(self, **vargs):
+    def info(self, *args, **kwargs):
         pass
 
-    def warning(self, **vargs):
+    def warning(self, *args, **kwargs):
         pass
 
-    def error(self, **vargs):
+    def error(self, *args, **kwargs):
         pass
 
-    def critical(self, **vargs):
+    def critical(self, *args, **kwargs):
         pass
 
-    def exception(self, **vargs):
+    def exception(self, *args, **kwargs):
         pass
 
-    def log(self, **vargs):
+    def log(self, *args, **kwargs):
         pass
 
 
