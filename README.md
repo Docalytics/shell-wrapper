@@ -17,7 +17,10 @@ the rest of your code much more readable.
 Example excuting a shell command:
 
 ```python
-with Pdf2HtmlExShellCommand('foo.pdf', resolution_dpi=72, split_pages=True, page_file_format='page%d.html') as cmd:
+with Pdf2HtmlExShellCommand('foo.pdf',
+                            resolution_dpi=72,
+                            split_pages=True,
+                            page_file_format='page%d.html') as cmd:
     if not cmd.execute():
         # Flag that it didn't work
         return False
